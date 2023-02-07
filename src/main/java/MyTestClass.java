@@ -1,7 +1,6 @@
 import com.amazon.SellingPartnerAPIAA.AWSAuthenticationCredentials;
 import com.amazon.SellingPartnerAPIAA.AWSAuthenticationCredentialsProvider;
 import com.amazon.SellingPartnerAPIAA.LWAAuthorizationCredentials;
-import io.swagger.client.ApiClient;
 import io.swagger.client.api.SellersApi;
 
 public class MyTestClass {
@@ -34,13 +33,6 @@ public class MyTestClass {
                 .endpoint("https://sellingpartnerapi-na.amazon.com")
                 .build();
 
-        ApiClient x = sellersApi.getApiClient();
-
-        System.out.println(x.getBasePath());
-        System.out.println(x.getJSON());
-        System.out.println(x.getAuthentications());
-
-        System.out.println(sellersApi);
     }
 
 }
